@@ -1,0 +1,182 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.general-content {
+    width: 30%;
+    border: 0.1rem solid black;
+    background-color: #eaeaea;
+    border-radius: 0.5rem;
+}
+
+.general-content .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem
+}
+
+.general-content .calculator-content .display {
+    border: 0.1rem solid black;
+    background-color: white;
+    margin: 1rem auto 0 auto;
+    text-align: right;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.general-content .calculator-content .display .display-sty {
+    font-size: 1.3em;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.general-content .calculator-content .calculator_buttons .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0.7rem;
+    grid-row-gap: 0.7rem;
+    text-align: center;
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .div1 {
+    display: contents;
+    grid-area: 1 / 1 / 2 / 5;
+}
+.general-content .calculator-content .calculator_buttons .parent .div2 {
+    grid-area: 2 / 4 / 4 / 5;
+}
+.general-content .calculator-content .calculator_buttons .parent .div3 {
+    display: contents;
+    grid-area: 2 / 1 / 5 / 4;
+}
+.general-content .calculator-content .calculator_buttons .parent .div4 {
+    grid-area: 4 / 4 / 6 / 5;
+}
+.general-content .calculator-content .calculator_buttons .parent .div5 {
+    grid-area: 5 / 1 / 6 / 3;
+}
+.general-content .calculator-content .calculator_buttons .parent .div6 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-operator {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #fe9d3d;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-operator:hover {
+    background-color: #fcb473;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-operator:nth-child(1) {
+    background-color: #e51d00;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-operator:nth-child(1):hover {
+    background-color: #f84329;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-number {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color: #b0afaf;
+    color: white;
+}
+
+.general-content .calculator-content .calculator_buttons .parent .btn-calculator-number:hover {
+    background-color: #7e7979;
+}
+
+.general-content .calculator-content .calculator_buttons .parent #btn-div2-1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #fe9d3d;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.general-content .calculator-content .calculator_buttons .parent #btn-div2-1:hover {
+    background-color: #fcb473;
+}
+
+.general-content .calculator-content .calculator_buttons .parent #btn-div4-1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #fe9d3d;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.general-content .calculator-content .calculator_buttons .parent #btn-div2-4:hover {
+    background-color: #fcb473;
+}
+
+
+/* Dispositivos pequeños (móviles en modo vertical, de hasta 360px) */
+@media (max-width: 375px) {
+    .general-content {
+        width: 80%;
+    }
+}
+
+/* Dispositivos pequeños (móviles en modo vertical, 375px a 414px) */
+@media (min-width: 376px) and (max-width: 414px) {
+    .general-content {
+        width: 80%;
+    }
+}
+
+/* Dispositivos pequeños (móviles en modo vertical, menos de 576px) */
+@media (min-width: 415px) and (max-width: 575.98px) {
+    .general-content {
+        width: 60%;
+    }
+}
+
+/* Dispositivos medianos (tablets, de 576px a 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .general-content {
+        width: 50%;
+    }
+}
